@@ -10,11 +10,11 @@ import androidx.appcompat.app.AppCompatActivity
 
 class BasicoEmpleados : AppCompatActivity()  {
 
-    var basicoEmpleado1=0
-    var basicoEmpleado2=0
-    var basicoEmpleado3=0
-    var basicoEmpleado4= 0
-    var basicoEmpleado5= 0
+    var basicoEmpleado1: Double = 0.0
+    var basicoEmpleado2: Double = 0.0
+    var basicoEmpleado3: Double = 0.0
+    var basicoEmpleado4: Double = 0.0
+    var basicoEmpleado5: Double = 0.0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,21 +29,21 @@ class BasicoEmpleados : AppCompatActivity()  {
 
     fun siguienteClick(view: View){
 
-        basicoEmpleado1 = findViewById<EditText>(R.id.editBasico1).text.toString().toInt()
-        basicoEmpleado2 = findViewById<EditText>(R.id.editBasico2).text.toString().toInt()
-        basicoEmpleado3 = findViewById<EditText>(R.id.editBasico3).text.toString().toInt()
-        basicoEmpleado4 = findViewById<EditText>(R.id.editBasico4).text.toString().toInt()
-        basicoEmpleado5 = findViewById<EditText>(R.id.editBasico5).text.toString().toInt()
+        basicoEmpleado1 = findViewById<EditText>(R.id.editBasico1).text.toString().toDouble()
+        basicoEmpleado2 = findViewById<EditText>(R.id.editBasico2).text.toString().toDouble()
+        basicoEmpleado3 = findViewById<EditText>(R.id.editBasico3).text.toString().toDouble()
+        basicoEmpleado4 = findViewById<EditText>(R.id.editBasico4).text.toString().toDouble()
+        basicoEmpleado5 = findViewById<EditText>(R.id.editBasico5).text.toString().toDouble()
 
 
 
         val intent = Intent(this, BonificacionEmpleados::class.java)
         val b : Bundle = Bundle()
-        b.putInt("basicoEmpleado1", basicoEmpleado1)
-        b.putInt("basicoEmpleado2", basicoEmpleado2)
-        b.putInt("basicoEmpleado3", basicoEmpleado3)
-        b.putInt("basicoEmpleado4", basicoEmpleado4)
-        b.putInt("basicoEmpleado5", basicoEmpleado5)
+        b.putDouble("basicoEmpleado1", basicoEmpleado1)
+        b.putDouble("basicoEmpleado2", basicoEmpleado2)
+        b.putDouble("basicoEmpleado3", basicoEmpleado3)
+        b.putDouble("basicoEmpleado4", basicoEmpleado4)
+        b.putDouble("basicoEmpleado5", basicoEmpleado5)
         intent.putExtras(b)
         startActivity(intent)
 
