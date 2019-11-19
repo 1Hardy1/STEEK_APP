@@ -95,12 +95,6 @@ class PrestamoEmpleados : AppCompatActivity()  {
         basicoEmpleado4 = bundle!!.getDouble("basicoEmpleado4")
         basicoEmpleado5 = bundle!!.getDouble("basicoEmpleado5")
 
-        bonificacionEmpleado1 = bundle!!.getDouble("bonificacionEmpleado1")
-        bonificacionEmpleado2 = bundle!!.getDouble("bonificacionEmpleado2")
-        bonificacionEmpleado3 = bundle!!.getDouble("bonificacionEmpleado3")
-        bonificacionEmpleado4 = bundle!!.getDouble("bonificacionEmpleado4")
-        bonificacionEmpleado5 = bundle!!.getDouble("bonificacionEmpleado5")
-
         comisionEmpleado1 = bundle!!.getDouble("comisionEmpleado1")
         comisionEmpleado2 = bundle!!.getDouble("comisionEmpleado2")
         comisionEmpleado3 = bundle!!.getDouble("comisionEmpleado3")
