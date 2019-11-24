@@ -58,7 +58,7 @@ class HorasEmpleados : AppCompatActivity() {
     }
 
 
-    fun siguienteComClick(view: View) {
+    fun siguienteHorasClick(view: View) {
 
         var bundle = intent.extras
 
@@ -122,7 +122,6 @@ class HorasEmpleados : AppCompatActivity() {
         devengadosEmpleado5=basicoEmpleado5+bonificacionEmpleado5+comisionEmpleado5+horasEmpleado5+auxilioEmpleado5
 
         totalDevengados=devengadosEmpleado1+devengadosEmpleado2+devengadosEmpleado3+devengadosEmpleado4+devengadosEmpleado5
-
 
 
 

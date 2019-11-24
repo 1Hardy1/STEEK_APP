@@ -16,6 +16,8 @@
         </activity>
         <activity android:name="com.electiva1.balance.Ingreso">
         </activity>
+        <activity android:name="com.electiva1.balance.NominaResultado">
+        </activity>
         <activity android:name="com.electiva1.balance.EmbargoEmpleados">
         </activity>
         <activity android:name="com.electiva1.balance.PrestamoEmpleados">

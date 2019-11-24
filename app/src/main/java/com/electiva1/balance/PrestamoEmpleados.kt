@@ -16,15 +16,6 @@ class PrestamoEmpleados : AppCompatActivity()  {
     var prestamoEmpleado4: Double = 0.0
     var prestamoEmpleado5: Double = 0.0
 
-
-    var bonificacionEmpleado1: Double = 0.0
-    var bonificacionEmpleado2: Double = 0.0
-    var bonificacionEmpleado3: Double = 0.0
-    var bonificacionEmpleado4: Double = 0.0
-    var bonificacionEmpleado5: Double = 0.0
-
-
-
     var horasEmpleado1 : Double = 0.0
     var horasEmpleado2 : Double = 0.0
     var horasEmpleado3 : Double = 0.0
@@ -87,7 +78,7 @@ class PrestamoEmpleados : AppCompatActivity()  {
 
     fun siguientePresClick(view: View){
 
-        var bundle =intent.extras
+       var bundle =intent.extras
 
         basicoEmpleado1 = bundle!!.getDouble("basicoEmpleado1")
         basicoEmpleado2 = bundle!!.getDouble("basicoEmpleado2")
@@ -133,27 +124,17 @@ class PrestamoEmpleados : AppCompatActivity()  {
         fondoEmpleado4=(basicoEmpleado4+horasEmpleado4+comisionEmpleado4)*(0.1)
         fondoEmpleado5=(basicoEmpleado5+horasEmpleado5+comisionEmpleado5)*(0.1)
 
-        descuentoEmpleado1=saludEmpleado1+pensionEmpleado1+fondoEmpleado1
-        descuentoEmpleado2=saludEmpleado2+pensionEmpleado2+fondoEmpleado2
-        descuentoEmpleado3=saludEmpleado3+pensionEmpleado3+fondoEmpleado3
-        descuentoEmpleado4=saludEmpleado4+pensionEmpleado4+fondoEmpleado4
-        descuentoEmpleado5=saludEmpleado5+pensionEmpleado5+fondoEmpleado5
-
-
-
-
-
-
-
-
-
-
         prestamoEmpleado1 = findViewById<EditText>(R.id.editPrestamo1).text.toString().toDouble()
         prestamoEmpleado2 = findViewById<EditText>(R.id.editPrestamo2).text.toString().toDouble()
         prestamoEmpleado3 = findViewById<EditText>(R.id.editPrestamo3).text.toString().toDouble()
         prestamoEmpleado4 = findViewById<EditText>(R.id.editPrestamo4).text.toString().toDouble()
         prestamoEmpleado5 = findViewById<EditText>(R.id.editPrestamo5).text.toString().toDouble()
 
+        descuentoEmpleado1=saludEmpleado1+pensionEmpleado1+fondoEmpleado1+prestamoEmpleado1
+        descuentoEmpleado2=saludEmpleado2+pensionEmpleado2+fondoEmpleado2+prestamoEmpleado2
+        descuentoEmpleado3=saludEmpleado3+pensionEmpleado3+fondoEmpleado3+prestamoEmpleado3
+        descuentoEmpleado4=saludEmpleado4+pensionEmpleado4+fondoEmpleado4+prestamoEmpleado4
+        descuentoEmpleado5=saludEmpleado5+pensionEmpleado5+fondoEmpleado5+prestamoEmpleado5
 
 
         val intent = Intent(this, EmbargoEmpleados::class.java)

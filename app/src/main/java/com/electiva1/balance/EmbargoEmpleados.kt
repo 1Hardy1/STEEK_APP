@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.CheckBox
 import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -31,11 +32,18 @@ class EmbargoEmpleados : AppCompatActivity()  {
     var descuentoEmpleado4: Double = 0.0
     var descuentoEmpleado5: Double = 0.0
 
+    var embargoEmpleado1: Double = 0.0
+    var embargoEmpleado2: Double = 0.0
+    var embargoEmpleado3: Double = 0.0
+    var embargoEmpleado4: Double = 0.0
+    var embargoEmpleado5: Double = 0.0
+
+    var totalDescuentos: Double = 0.0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_prestamos)
+        setContentView(R.layout.activity_embargos)
 
 
     }
@@ -43,7 +51,7 @@ class EmbargoEmpleados : AppCompatActivity()  {
 
 
 
-    fun siguientePresClick(view: View){
+    fun siguienteEmbClick(view: View){
 
         var bundle =intent.extras
 
@@ -67,11 +75,44 @@ class EmbargoEmpleados : AppCompatActivity()  {
 
         totalDevengados = bundle!!.getDouble("totalDevengados")
 
+        var embargocb1 = findViewById<CheckBox>(R.id.embargoEmp1)
+        var embargocb2 = findViewById<CheckBox>(R.id.embargoEmp2)
+        var embargocb3 = findViewById<CheckBox>(R.id.embargoEmp3)
+        var embargocb4 = findViewById<CheckBox>(R.id.embargoEmp4)
+        var embargocb5 = findViewById<CheckBox>(R.id.embargoEmp5)
+
+        if(embargocb1.isChecked){
+            embargoEmpleado1= (basicoEmpleado1-828116)/5
+
+        }
+
+        if(embargocb2.isChecked){
+            embargoEmpleado2= (basicoEmpleado2-828116)/5
+        }
 
 
+        if(embargocb3.isChecked){
+            embargoEmpleado3= (basicoEmpleado3-828116)/5
+        }
+
+        if(embargocb4.isChecked){
+            embargoEmpleado4= (basicoEmpleado4-828116)/5
+        }
 
 
-        val intent = Intent(this, ComisionEmpleados::class.java)
+        if(embargocb5.isChecked){
+            embargoEmpleado5= (basicoEmpleado5-828116)/5
+        }
+
+        descuentoEmpleado1= descuentoEmpleado1+embargoEmpleado1
+        descuentoEmpleado2= descuentoEmpleado2+embargoEmpleado2
+        descuentoEmpleado3= descuentoEmpleado3+embargoEmpleado3
+        descuentoEmpleado4= descuentoEmpleado4+embargoEmpleado4
+        descuentoEmpleado5= descuentoEmpleado5+embargoEmpleado5
+
+        totalDescuentos= descuentoEmpleado1+descuentoEmpleado2+descuentoEmpleado3+descuentoEmpleado4+descuentoEmpleado5
+
+        val intent = Intent(this, NominaResultado::class.java)
         val b : Bundle = Bundle()
 
         b.putDouble("descuentoEmpleado1", descuentoEmpleado1)
@@ -80,11 +121,16 @@ class EmbargoEmpleados : AppCompatActivity()  {
         b.putDouble("descuentoEmpleado4", descuentoEmpleado4)
         b.putDouble("descuentoEmpleado5", descuentoEmpleado5)
 
-        b.putDouble("basicoEmpleado1", basicoEmpleado1)
-        b.putDouble("basicoEmpleado2", basicoEmpleado2)
-        b.putDouble("basicoEmpleado3", basicoEmpleado3)
-        b.putDouble("basicoEmpleado4", basicoEmpleado4)
-        b.putDouble("basicoEmpleado5", basicoEmpleado5)
+        b.putDouble("devengadosEmpleado1", devengadosEmpleado1)
+        b.putDouble("devengadosEmpleado2", devengadosEmpleado2)
+        b.putDouble("devengadosEmpleado3", devengadosEmpleado3)
+        b.putDouble("devengadosEmpleado4", devengadosEmpleado4)
+        b.putDouble("devengadosEmpleado5", devengadosEmpleado5)
+
+        b.putDouble("totalDevengados", totalDevengados)
+        b.putDouble("totalDescuentos", totalDescuentos)
+
+
         intent.putExtras(b)
         startActivity(intent)
 
