@@ -92,7 +92,7 @@
         android:id="@+id/textView47"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="72dp"
         android:layout_marginTop="36dp"
         android:text="DESCUENTOS"
         app:layout_constraintStart_toEndOf="@+id/textView46"
@@ -107,16 +107,6 @@
         android:text="TOTAL "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView49"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="36dp"
-        android:text="NETO PAGAR"
-        app:layout_constraintStart_toEndOf="@+id/textView47"
-        app:layout_constraintTop_toBottomOf="@+id/textView40" />
 
     <TextView
         android:id="@+id/devengadoEmp1"
@@ -176,7 +166,7 @@
         android:id="@+id/descuentoEmp1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="136dp"
         android:layout_marginTop="48dp"
         app:layout_constraintStart_toEndOf="@+id/devengadoEmp1"
         app:layout_constraintTop_toBottomOf="@+id/textView47" />
@@ -185,7 +175,7 @@
         android:id="@+id/descuentoEmp2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
+        android:layout_marginStart="136dp"
         android:layout_marginTop="44dp"
         app:layout_constraintStart_toEndOf="@+id/devengadoEmp2"
         app:layout_constraintTop_toBottomOf="@+id/descuentoEmp1" />
@@ -194,7 +184,7 @@
         android:id="@+id/descuentoEmp3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="136dp"
         android:layout_marginTop="52dp"
         app:layout_constraintStart_toEndOf="@+id/devengadoEmp3"
         app:layout_constraintTop_toBottomOf="@+id/descuentoEmp2" />
@@ -203,7 +193,7 @@
         android:id="@+id/descuentoEmp4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="136dp"
         android:layout_marginTop="56dp"
         app:layout_constraintStart_toEndOf="@+id/devengadoEmp4"
         app:layout_constraintTop_toBottomOf="@+id/descuentoEmp3" />
@@ -212,8 +202,8 @@
         android:id="@+id/descuentoEmp5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintStart_toEndOf="@+id/devengadoEmp5"
         app:layout_constraintTop_toBottomOf="@+id/descuentoEmp4" />
 
@@ -221,64 +211,10 @@
         android:id="@+id/totalDescuentos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="136dp"
         android:layout_marginTop="60dp"
         app:layout_constraintStart_toEndOf="@+id/totalDevengados"
         app:layout_constraintTop_toBottomOf="@+id/descuentoEmp5" />
-
-    <TextView
-        android:id="@+id/netoEmp1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="52dp"
-        app:layout_constraintStart_toEndOf="@+id/descuentoEmp1"
-        app:layout_constraintTop_toBottomOf="@+id/textView49" />
-
-    <TextView
-        android:id="@+id/netoEmp2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="44dp"
-        app:layout_constraintStart_toEndOf="@+id/descuentoEmp2"
-        app:layout_constraintTop_toBottomOf="@+id/netoEmp1" />
-
-    <TextView
-        android:id="@+id/netoEmp3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="52dp"
-        app:layout_constraintStart_toEndOf="@+id/descuentoEmp3"
-        app:layout_constraintTop_toBottomOf="@+id/netoEmp2" />
-
-    <TextView
-        android:id="@+id/netoEmp4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="56dp"
-        app:layout_constraintStart_toEndOf="@+id/descuentoEmp4"
-        app:layout_constraintTop_toBottomOf="@+id/netoEmp3" />
-
-    <TextView
-        android:id="@+id/netoEmp5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="56dp"
-        app:layout_constraintStart_toEndOf="@+id/descuentoEmp5"
-        app:layout_constraintTop_toBottomOf="@+id/netoEmp4" />
-
-    <TextView
-        android:id="@+id/netoNomina"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="60dp"
-        app:layout_constraintStart_toEndOf="@+id/totalDescuentos"
-        app:layout_constraintTop_toBottomOf="@+id/netoEmp5" />
 
     <Button
         android:id="@+id/btnNuevaNomina"

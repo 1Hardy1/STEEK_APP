@@ -90,7 +90,7 @@ class NominaResultado : AppCompatActivity()  {
         findViewById<TextView>(R.id.totalDevengados).text= totalDevengados.toString()
         findViewById<TextView>(R.id.totalDescuentos).text= totalDescuentos.toString()
 
-        findViewById<TextView>(R.id.netoEmp1).text= netoEmpleado1.toString()
+       /** findViewById<TextView>(R.id.netoEmp1).text= netoEmpleado1.toString()
         findViewById<TextView>(R.id.netoEmp2).text= netoEmpleado2.toString()
         findViewById<TextView>(R.id.netoEmp3).text= netoEmpleado3.toString()
         findViewById<TextView>(R.id.netoEmp4).text= netoEmpleado4.toString()
@@ -98,7 +98,7 @@ class NominaResultado : AppCompatActivity()  {
 
         findViewById<TextView>(R.id.netoNomina).text= netoNomina.toString()
 
-
+*/
 
 
 

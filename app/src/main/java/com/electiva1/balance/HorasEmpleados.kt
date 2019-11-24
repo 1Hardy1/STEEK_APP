@@ -85,30 +85,30 @@ class HorasEmpleados : AppCompatActivity() {
         horasEmpleado2 = findViewById<EditText>(R.id.editHoras2).text.toString().toDouble()
         horasEmpleado3 = findViewById<EditText>(R.id.editHoras3).text.toString().toDouble()
         horasEmpleado4 = findViewById<EditText>(R.id.editHoras4).text.toString().toDouble()
-        horasEmpleado5 = findViewById<EditText>(R.id.editHoras4).text.toString().toDouble()
+        horasEmpleado5 = findViewById<EditText>(R.id.editHoras5).text.toString().toDouble()
 
 
-        if (basicoEmpleado1 < (minimo * 2)) {
+        if (basicoEmpleado1 < (minimo * 2) && basicoEmpleado1 >0) {
             auxilioEmpleado1 = 97032.0
         } else {
             auxilioEmpleado1 = 0.0
         }
-        if (basicoEmpleado2 < (minimo * 2)) {
+        if (basicoEmpleado2 < (minimo * 2)&& basicoEmpleado2 >0) {
             auxilioEmpleado2 = 97032.0
         } else {
             auxilioEmpleado2 = 0.0
         }
-        if (basicoEmpleado3 < (minimo * 2)) {
+        if (basicoEmpleado3 < (minimo * 2)&& basicoEmpleado3 >0) {
             auxilioEmpleado3 = 97032.0
         } else {
             auxilioEmpleado3 = 0.0
         }
-        if (basicoEmpleado4 < (minimo * 2)) {
+        if (basicoEmpleado4 < (minimo * 2)&& basicoEmpleado4 >0) {
             auxilioEmpleado4 = 97032.0
         } else {
             auxilioEmpleado4 = 0.0
         }
-        if (basicoEmpleado5 < (minimo * 2)) {
+        if (basicoEmpleado5 < (minimo * 2)&& basicoEmpleado5 >0) {
             auxilioEmpleado5 = 97032.0
         } else {
             auxilioEmpleado5 = 0.0
