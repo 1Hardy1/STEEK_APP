@@ -3,10 +3,7 @@ package com.electiva1.balance
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.CheckBox
-import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -64,6 +61,7 @@ class NominaResultado : AppCompatActivity()  {
         totalDevengados = bundle!!.getDouble("totalDevengados")
         totalDescuentos = bundle!!.getDouble("totalDescuentos")
 
+
         netoEmpleado1= devengadosEmpleado1-descuentoEmpleado1
         netoEmpleado2= devengadosEmpleado2-descuentoEmpleado2
         netoEmpleado3= devengadosEmpleado3-descuentoEmpleado3
@@ -72,33 +70,26 @@ class NominaResultado : AppCompatActivity()  {
 
         netoNomina= netoEmpleado1+netoEmpleado2+netoEmpleado3+netoEmpleado4+netoEmpleado5
 
-
-
-
         findViewById<TextView>(R.id.devengadoEmp1).text= devengadosEmpleado1.toString()
         findViewById<TextView>(R.id.devengadoEmp2).text= devengadosEmpleado2.toString()
         findViewById<TextView>(R.id.devengadoEmp3).text= devengadosEmpleado3.toString()
         findViewById<TextView>(R.id.devengadoEmp4).text= devengadosEmpleado4.toString()
         findViewById<TextView>(R.id.devengadoEmp5).text= devengadosEmpleado5.toString()
+        findViewById<TextView>(R.id.totalDevengados).text= totalDevengados.toString()
 
         findViewById<TextView>(R.id.descuentoEmp1).text= descuentoEmpleado1.toString()
         findViewById<TextView>(R.id.descuentoEmp2).text= descuentoEmpleado2.toString()
         findViewById<TextView>(R.id.descuentoEmp3).text= descuentoEmpleado3.toString()
         findViewById<TextView>(R.id.descuentoEmp4).text= descuentoEmpleado4.toString()
         findViewById<TextView>(R.id.descuentoEmp5).text= descuentoEmpleado5.toString()
-
-        findViewById<TextView>(R.id.totalDevengados).text= totalDevengados.toString()
         findViewById<TextView>(R.id.totalDescuentos).text= totalDescuentos.toString()
 
-       /** findViewById<TextView>(R.id.netoEmp1).text= netoEmpleado1.toString()
+        findViewById<TextView>(R.id.netoEmp1).text= netoEmpleado1.toString()
         findViewById<TextView>(R.id.netoEmp2).text= netoEmpleado2.toString()
         findViewById<TextView>(R.id.netoEmp3).text= netoEmpleado3.toString()
         findViewById<TextView>(R.id.netoEmp4).text= netoEmpleado4.toString()
         findViewById<TextView>(R.id.netoEmp5).text= netoEmpleado5.toString()
-
         findViewById<TextView>(R.id.netoNomina).text= netoNomina.toString()
-
-*/
 
 
 
@@ -106,17 +97,20 @@ class NominaResultado : AppCompatActivity()  {
     }
 
 
-    fun btnNuevaClick(view: View){
+   fun btnNuevaClick(view: View){
 
         val intent = Intent(this, BasicoEmpleados::class.java)
         startActivity(intent)
 
     }
 
-    fun btnMenuClick(view: View){
+
+    fun btnMenuPrincClick(view: View){
 
         val intent = Intent(this, Menu::class.java)
         startActivity(intent)
 
     }
+
+
 }

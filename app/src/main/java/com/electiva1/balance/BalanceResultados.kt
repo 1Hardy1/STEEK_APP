@@ -45,4 +45,10 @@ class BalanceResultados : AppCompatActivity() {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
+
+    fun btnMenuPrincipClick(view: View) {
+
+        val intent = Intent(this, Menu::class.java)
+        startActivity(intent)
+    }
 }
