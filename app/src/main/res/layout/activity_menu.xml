@@ -20,7 +20,7 @@
             android:layout_width="154dp"
             android:layout_height="151dp"
             android:layout_marginStart="36dp"
-            android:layout_marginTop="364dp"
+            android:layout_marginTop="232dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/equilibrar" />
@@ -29,35 +29,35 @@
             android:id="@+id/imageView5"
             android:layout_width="155dp"
             android:layout_height="165dp"
-            android:layout_marginStart="36dp"
+            android:layout_marginStart="40dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView4"
-            app:layout_constraintVertical_bias="0.54"
+            app:layout_constraintVertical_bias="0.207"
             app:srcCompat="@drawable/dineromenu" />
 
         <Button
             android:id="@+id/btnBalance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="140dp"
-            android:text="BALANCE"
+            android:layout_marginBottom="152dp"
             android:onClick="balanceClick"
+            android:text="BALANCE"
             app:layout_constraintBottom_toTopOf="@+id/btnNomina"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintHorizontal_bias="0.526"
             app:layout_constraintStart_toEndOf="@+id/imageView4" />
 
         <Button
             android:id="@+id/btnNomina"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="84dp"
+            android:layout_marginBottom="188dp"
             android:onClick="nominaClick"
             android:text="NOMINA"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintHorizontal_bias="0.507"
             app:layout_constraintStart_toEndOf="@+id/imageView5" />
 
         <TextView

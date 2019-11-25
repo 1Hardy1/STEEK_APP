@@ -10,8 +10,8 @@
         android:id="@+id/imageView10"
         android:layout_width="123dp"
         android:layout_height="106dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="64dp"
         app:layout_constraintBottom_toTopOf="@+id/btnSiguiente"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/embargo" />
@@ -20,8 +20,8 @@
         android:id="@+id/textView39"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="92dp"
         android:text="EMBARGOS"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,10 +31,10 @@
         android:id="@+id/btnSiguiente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="64dp"
-        android:text="SIGUIENTE"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="176dp"
         android:onClick="siguienteEmbClick"
+        android:text="SIGUIENTE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="12dp"
         android:text="EMPLEADO 2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/embargoEmp1" />
@@ -63,7 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="24dp"
         android:text="EMPLEADO 3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/embargoEmp2" />
@@ -73,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="24dp"
         android:text="EMPLEADO 4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/embargoEmp3" />
@@ -83,7 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="16dp"
         android:text="EMPLEADO 5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/embargoEmp4" />
